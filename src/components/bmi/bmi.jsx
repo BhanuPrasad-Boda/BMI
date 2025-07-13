@@ -44,13 +44,15 @@ export function Bmi() {
 
     function btnclick() {
 
-        if(hours>=4 && hours<12){
+        
+            if(hours>=4 && hours<12){
             setperson(`Good morning! ${gender}, `);
         }else if(hours>=12 && hours<16){
-            setperson(`Good afternoon! ${gender},, `);
+            setperson(`Good afternoon! ${gender}, `);
         }else{
             setperson(`Good evening! ${gender}, `);
         }
+        
 
         const Age = parseFloat(age);
         const height=parseFloat(hei);
@@ -118,7 +120,7 @@ export function Bmi() {
                             <option></option>
                             <option value="Sir">Male</option>
                             <option value="Madam">Female</option>
-                            <option value="">Other</option>
+                            <option value=" ">Other</option>
                         </select>
                     </div>
                 </div>
