@@ -23,10 +23,10 @@ export function Bmi() {
     const [suggest,setsuggest] = useState('');
     const [fon,setfon] = useState('');
     const now = new Date();
-    const time = now.toLocaleTimeString('');
+    
      const [person,setperson] = useState('');
      const hours=now.getHours();
-     const seconds=now.getSeconds();
+     
 
     function heichange(e){
         sethei(parseInt((e.target.value)))
